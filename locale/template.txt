@@ -1,0 +1,13 @@
+# textdomain: phonograph_album_diarmuid
+
+##[ .cdb_i18n.lua ]##
+Phonograph Album: Diarmuid's Soundtracks=
+
+##[ .cdb_i18n.lua ]##
+##[ init.lua ]##
+Songs composed by Diarmuid=
+
+##[ init.lua ]##
+Diarmuid wrote 41 soundtracks (they're all very short for the most part) for Minetest about 4 years ago. They were intended to be a part of a soundtrack mod, however Diarmuid never finished it.=
+Diarmuid did not give the names of their songs. All songs are listed with their codenames.=
+Diarmuid's Soundtracks=
