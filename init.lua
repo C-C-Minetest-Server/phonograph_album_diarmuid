@@ -5,6 +5,10 @@
 -- Soundtrack license: CC BY-SA 4.0
 
 local S = minetest.get_translator("phonograph_album_1f616emo")
+local MP = minetest.get_modpath("phonograph_album_diarmuid")
+
+assert(phonograph.send_song,
+    "Please upgrade your Phonograph mod to commit f689f79 or later.")
 
 local long_desc = S("Diarmuid wrote 41 soundtracks (they're all very short for the most part) for Minetest " ..
         "about 4 years ago. They were intended to be a part of a soundtrack mod, " ..
@@ -67,8 +71,7 @@ for _, song in ipairs({
         short_description = nil,
         long_description = nil,
         artist = nil,
-        spec = { -- a SimpleSoundSpec
-            name = "phonograph_album_diarmuid_" .. song,
-        }
+        filepath = table.concat({MP, "phonographs", "phonograph_album_diarmuid_" .. song  .. ".ogg"}, DIR_DELIM),
+        spec = {},
     })
 end
