@@ -20,6 +20,7 @@ local album = phonograph.register_album("phonograph_album_diarmuid:album_diarmui
     long_description = long_desc,
     cover = nil,         -- use default cover for now
     artist = "Diarmuid", -- Not translated on purpose
+    license = phonograph.licenses.CCBYSA4,
 })
 
 -- All originally unnamed, using their codenames
