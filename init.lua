@@ -4,8 +4,8 @@
 -- SPDX-License-Identifier: LGPL-2.1-or-later
 -- Soundtrack license: CC BY-SA 4.0
 
-local S = minetest.get_translator("phonograph_album_1f616emo")
-local MP = minetest.get_modpath("phonograph_album_diarmuid")
+local S = core.get_translator("phonograph_album_1f616emo")
+local MP = core.get_modpath("phonograph_album_diarmuid")
 
 assert(phonograph.send_song,
     "Please upgrade your Phonograph mod to commit f689f79 or later.")
