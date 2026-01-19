@@ -66,12 +66,22 @@ for _, song in ipairs({
     "woods",
     "woods2",
 }) do
+    local filepath_base = table.concat({ MP, "phonographs", "phonograph_album_diarmuid_" .. song }, DIR_DELIM)
     album:register_song(song, {
         title = song,
         short_description = nil,
         long_description = nil,
         artist = nil,
-        filepath = table.concat({MP, "phonographs", "phonograph_album_diarmuid_" .. song  .. ".ogg"}, DIR_DELIM),
-        spec = {},
+        spec = {
+            filepath = filepath_base .. ".ogg",
+        },
+        multichannel_specs = {
+            {
+                filepath = filepath_base .. "_ch0.ogg",
+            },
+            {
+                filepath = filepath_base .. "_ch1.ogg",
+            },
+        },
     })
 end
